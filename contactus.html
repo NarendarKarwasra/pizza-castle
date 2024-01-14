@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Abc...</title>
+</head>
+<style>
+
+body{
+margin:0;
+background:url('Contact.jpg') no-repeat;
+background-size:1500px;
+background-attachment:fixed;
+}
+
+
+
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:#61a099;
+}
+li{
+	float:left;
+}
+.li-order{
+float:right;
+}
+li a{
+	display:inline-block;
+	text-align:center;
+	color:#333;
+	padding:15px 20px;
+	text-decoration:none;
+	font-size:25px;
+}
+li.dropdown{
+	display:inline-block;
+}
+.dropdown-content{
+	display:none;
+	position:absolute;
+	background:#f9f9f9;
+	min-width:160px;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index:1;
+}
+.dropdown-content a{
+	color:black;
+	padding:12px 16px;
+	text-align:left;
+	display:block;
+}
+li a.active{
+	background:#097676;
+	color:white;
+}
+li a:hover:not(.active), .order-btn:hover{
+	background:#395e5d;
+	color:white;
+}
+.dropdown-content a:hover{
+	background:#f1f1f1;
+}
+.dropdown:hover .dropdown-content{
+	display:block;
+}
+
+
+
+.container{
+border-bottom:4px solid black;
+border-right:4px solid black;
+box-shadow:10px 10px 20px;
+border-radius:30px;
+width:40%;
+height:35%;
+text-align:center;
+margin:110px auto;
+background:#395e5d;
+}
+h1{
+padding-top:20px;
+}
+h3{
+font-size:2vw;
+}
+img{
+width:10%;
+float:left;
+padding:0px 0 10px 50px; 
+}
+.row:after{
+content:"";
+display:table;
+clear:both;
+}
+
+
+@media screen and (max-width:1000px){
+
+.container{
+width:50%;
+height:35%;
+margin:120px auto;
+}
+h3{
+font-size:2.5vw;
+}
+}
+
+
+
+
+@media screen and (max-width:700px){
+
+.container{
+width:70%;
+height:35%;
+margin:50px auto;
+}
+h3{
+font-size:3vw;
+}
+li{
+float:none;
+}
+.li-order{
+float:none;
+}
+li a{
+display:block;
+padding:8px 20px;
+}
+li.dropdown{
+display:block;
+}
+.dropdown-content a{
+	padding:6px 16px;
+}
+.ul-order{
+float:none;
+}
+.dropdown-content{
+	width:100%;
+}
+.dropdown-content a{
+	text-align:center;
+}
+}
+
+@media screen and (max-width:500px){
+li a{
+font-size:20px;
+}
+}
+
+
+
+</style>
+</head>
+<ul class="topnav">
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="#news">News</a></li>
+<li class="dropdown"><a href="#product">Product</a>
+<div class="dropdown-content">
+<a href="burger.html">Burger</a>
+<a href="pizza.html">Pizza</a>
+<a href="fries.html">Fries</a>
+<a href="sandwitch.html">Sandwich</a>
+<a href="morrito.html">Burrito</a>
+<a href="taco.html">Taco</a>
+<a href="noodels.html">Noodles</a>
+<a href="donuts.html">Donut</a>
+<a href="coffe.html">Cold-coffe</a>
+<a href="cake.html">Pancakes</a>
+</div>
+</li>
+<li><a href="Contactus.html">Contact Us</a></li>
+<li class="li-order"><a href="order.html">Order Now</a></li>
+</ul>
+
+<div class="container">
+<h1>Contact us</h1><hr>
+<br>
+<div class="row">
+<img src="phone.png">
+<h3>+91 9876543210
+<br>
++91 7856342367
+</h3>
+</div>
+
+<div class="row">
+<img src="gmail.png">
+<h3>nk123@gmail.com
+<br>
+cg123@gmail.com
+</h3>
+</div>
+
+<div class="row">
+<img src="location.png" style="padding-bottom:50px;">
+<h3>Near balvatika,vans chowk,
+<br>
+Nohar, Rajasthan
+</h3>
+</div>
+</div>

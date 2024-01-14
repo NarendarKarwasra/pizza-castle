@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Abc...</title>
+</head>
+<style>
+*{
+	box-sizing:border-box;
+}
+body{
+margin:0;
+background:url('back-drop.jpg');
+background-size:100%;
+}
+
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:#61a099;
+}
+li{
+	float:left;
+}
+.li-order{
+	float:right;
+}
+li a{
+	display:inline-block;
+	text-align:center;
+	color:#333;
+	padding:15px 20px;
+	text-decoration:none;
+	font-size:25px;
+}
+li.dropdown{
+	display:inline-block;
+}
+.dropdown-content{
+	display:none;
+	position:absolute;
+	background:#f9f9f9;
+	min-width:160px;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index:1;
+}
+.dropdown-content a{
+	color:black;
+	padding:12px 16px;
+	text-align:left;
+	display:block;
+}
+li a.active{
+	background:#097676;
+	color:white;
+}
+li a:hover:not(.active), .order-btn:hover{
+	background:#395e5d;
+	color:white;
+}
+.dropdown-content a:hover{
+	background:#f1f1f1;
+}
+.dropdown:hover .dropdown-content{
+	display:block;
+}
+
+
+
+
+.container{
+margin:5%;
+}
+.top-column{
+width:28%;
+margin:auto;
+opacity:0.9;
+}
+.top-column img{
+width:100%;
+border-radius:60px;
+border:2px solid black;
+box-shadow:5px 0 5px white;
+}
+.down-column{
+margin:auto;
+width:90%;
+text-align:center;
+padding:0 30px 50px 30px;
+border-radius:50px;
+}
+.down-column h1{
+font-size:5vw;
+}
+.down-column p{
+font-size:2vw;
+line-height:35px;
+}
+.order-btn{
+	text-decoration:none;
+	color:black;
+	background-color:#61a099;
+	border:1px solid black;
+	border-radius:5px;
+	padding:10px 30px;
+	font-size:2.5vw;
+}
+.order-btn:hover{
+	background:#395e5d;
+	color:white;
+}
+
+
+
+
+@media screen and (max-width:1000px){
+.top-column{
+width:40%;
+margin:auto;
+}
+.top-column img{
+width:100%;
+margin-top:10%;
+}
+.down-column h1{
+font-size:8vw;
+}
+.down-column p{
+font-size:3.5vw;
+}
+.order-btn{
+	padding:10px 30px;
+	font-size:3vw;
+}
+.container{
+margin:0;
+}
+}
+
+
+@media screen and (max-width:700px){
+li{
+float:none;
+}
+.li-order{
+	float:none;
+}
+li a{
+display:block;
+padding:8px 20px;
+}
+li.dropdown{
+display:block;
+}
+.dropdown-content a{
+	padding:6px 16px;
+}
+.ul-order{
+float:none;
+}
+.dropdown-content{
+	width:100%;
+}
+.dropdown-content a{
+	text-align:center;
+}
+
+
+
+.down-column h1{
+font-size:8vw;
+}
+.down-column p{
+font-size:4vw;
+line-height:35px;
+}
+.order-btn{
+	padding:10px 30px;
+	font-size:3.5vw;
+}
+}
+
+
+
+
+</style>
+</head>
+
+<ul class="topnav">
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="#news">News</a></li>
+<li class="dropdown"><a href="#product">Product</a>
+<div class="dropdown-content">
+<a href="burger.html">Burger</a>
+<a href="pizza.html">Pizza</a>
+<a href="fries.html">Fries</a>
+<a href="sandwitch.html">Sandwich</a>
+<a href="morrito.html">Burrito</a>
+<a href="taco.html">Taco</a>
+<a href="noodels.html">Noodles</a>
+<a href="donuts.html">Donut</a>
+<a href="coffe.html">Cold-coffe</a>
+<a href="cake.html">Pancakes</a>
+</div>
+</li>
+<li><a href="Contactus.html">Contact Us</a></li>
+<li class="li-order"><a href="order.html">Order Now</a></li>
+</ul>
+
+
+<div class="container">
+<div class="top-column">
+<img src="coldcoffe5.jpg" width="100%">
+</div>
+
+<div class="down-column">
+<h1>Cold-Coffe</h1>
+<p>
+Cold coffee, also known as iced coffee or cold brew coffee, is a refreshing and invigorating beverage that has become a popular choice, especially in warm weather or for those seeking a chilled alternative to hot coffee. This beverage is made from coffee that is brewed hot and then cooled down or from coffee that is brewed with cold water over an extended period, known as cold brewing.
+
+Iced coffee can be enjoyed in various forms. One common method involves brewing hot coffee and then pouring it over ice, often with added milk or cream and sweeteners. Cold brew coffee, on the other hand, is made by steeping coarsely ground coffee beans in cold water for an extended period, typically 12-24 hours. The result is a smoother and less acidic coffee concentrate that can be diluted with water or milk and customized to taste.
+
+Iced coffee offers a delightful contrast between the robust flavor of coffee and the chill of ice, making it a popular choice for a pick-me-up in the morning or a refreshing afternoon treat. It's often enjoyed in coffee shops.</p>
+<button class="order-btn">Order Now</button>
+</div>
+</div>
