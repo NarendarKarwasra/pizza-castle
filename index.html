@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Abc...</title>
+</head>
+<style>
+*{
+	box-sizing:border-box;
+}
+body{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:#61a099;
+}
+li{
+	float:left;
+}
+.li-order{
+	float:right;
+}
+li a{
+	display:inline-block;
+	text-align:center;
+	color:#333;
+	padding:15px 20px;
+	text-decoration:none;
+	font-size:25px;
+}
+li.dropdown{
+	display:inline-block;
+}
+.dropdown-content{
+	display:none;
+	position:absolute;
+	background:#f9f9f9;
+	min-width:160px;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index:1;
+}
+.dropdown-content a{
+	color:black;
+	padding:12px 16px;
+	text-align:left;
+	display:block;
+}
+li a.active{
+	background:#097676;
+	color:white;
+}
+li a:hover:not(.active), .order-btn:hover{
+	background:#395e5d;
+	color:white;
+}
+.dropdown-content a:hover{
+	background:#f1f1f1;
+}
+.dropdown:hover .dropdown-content{
+	display:block;
+}
+
+
+
+
+div.home{
+	width:100%;
+	background:url('home1.jpg') no-repeat;
+	background-size:100%;
+}
+.home-content{
+	text-align:center;
+	padding:3% 0 6% 0;
+}
+.home-content h1{
+	margin:0;
+	font-size:5vw;	
+}
+.home-content h3{
+	font-size:2.3vw;
+	padding-bottom:2%;
+}
+.order-btn{
+	text-decoration:none;
+	color:black;
+	background-color:#61a099;
+	border:1px solid black;
+	border-radius:5px;
+	padding:1% 2%;
+	font-size:2vw;
+}
+
+
+
+
+
+.container{
+	margin-top:50px;
+	background:rgba(27,27,41,0.98);
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.cont-img{
+	width:40%;
+	float:left;
+}
+.cont-detail{
+	float:left;
+	padding:4%;
+	color:white;
+	width:60%;
+}
+.container:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+.cont-detail h1{
+	font-size:3.5vw;
+}
+.cont-detail p{
+	font-size:3vw;
+	line-height:3.5vw;
+}
+
+.special h1{
+	text-align:center;
+	font-size:4vw;
+	margin-top:5%;;
+}
+.sp{
+	margin-left:5%;
+}
+.sp-1 h1{
+	margin:0;
+	font-size:2.5vw
+}
+.sp-1 h2{
+	font-size:1.8vw;
+	margin:20px;
+}
+.sp-1{
+	border:1px solid black;
+	border-radius:10px;
+	width:20%;
+	height:30%;
+	text-align:center;
+	box-shadow:5px 5px 5px;
+	margin-left:40px;
+	padding:20px 0;
+	float:left;
+	background:url('back-special.jpg') no-repeat;
+	background-size:105% 105%;
+}
+.sp-1:hover{
+	box-shadow:none;
+}
+.sp-1 .order-btn{
+	font-size:1.6vw;
+	padding:10px 20px;
+}
+.sp-1 .order-btn:hover{
+	
+	cursor:pointer;
+}
+.special:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+
+.footer{
+	margin-top:5vw;
+	padding-bottom:3vw;
+	text-align:center;
+	background:url(back-reser.jpg) no-repeat;
+	background-size:100%;
+}
+.footer h1{
+	font-size:4vw;
+	color:#e4e4e4;
+}
+.footer-cont{
+	width:100%;
+	margin:auto;
+}
+.left-footer{
+	float:left;
+	width:30%;
+	margin-left:22%;
+}
+.right-footer{
+	float:left;
+	width:30%;
+}
+.footer-cont:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+.left-footer input,.right-footer input{
+	display:block;
+}
+.footer input[type=submit]{
+	padding:10px 30px;
+	font-size:1.6vw;
+	margin-top:3vw;
+	cursor:pointer;
+}
+input[type=text], input[type=email], input[type=number], 
+input[type=date], input[type=range], input[type=time],
+input[type=tel]
+{
+	width:80%;	
+	padding:1vw;
+	font-size:1.5vw;
+	border:none;
+	border-bottom:2px solid black;
+	margin-top:4%;
+	opacity:0.7;
+}
+input[type=range]{
+	margin-top:7%;
+}
+input[type=time]{
+	margin-top:0;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=date]:focus,
+input[type=range]:focus, input[type=time]:focus, input[type=tel]:focus{
+	opacity:1.0;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1000px){
+
+.home-content{
+	padding:3% 0 5% 0;
+}
+.home-content h1{
+	font-size:5.5vw;	
+}
+.home-content h3{
+	font-size:2.9vw;
+	padding-bottom:0%;
+}
+.order-btn{
+	font-size:2.7vw;
+}
+.sp-1{
+	width:30%;
+	height:30%;
+	margin-bottom:5%;
+}
+.sp{
+	margin-left:20%;
+}
+.special h1{
+	font-size:6vw;
+}
+.sp-1 h1{
+	font-size:3vw
+}
+.sp-1 h2{
+	font-size:2.5vw;
+}
+
+.sp-1 .order-btn{
+	font-size:2vw;
+}
+.left-footer{
+	width:35%;
+	margin-left:19%;
+}
+.right-footer{
+	width:35%;
+}
+.footer input[type=submit]{
+	padding:10px 30px;
+	font-size:1.8vw;
+}
+input[type=text], input[type=email], input[type=number], 
+input[type=date], input[type=range], input[type=time],
+input[type=tel]
+{
+	padding:1vw;
+	font-size:1.8vw;
+	margin-top:6%;
+}
+input[type=range]{
+	margin-top:10%;
+}
+ input[type=time]{
+	 margin-top:0;
+ }
+}
+
+
+
+
+@media screen and (max-width:700px){
+div.home{
+	background-size:100% 100%;
+}
+.home-content{
+	padding:3% 0 4% 0;
+}
+.home-content h1{
+	font-size:7vw;	
+}
+.home-content h3{
+	font-size:3.9vw;
+}
+.order-btn{
+	font-size:4vw;
+}
+
+
+
+
+
+li{
+float:none;
+}
+.li-order{
+	float:none;
+}
+li a{
+display:block;
+padding:8px 20px;
+}
+li.dropdown{
+display:block;
+}
+.dropdown-content a{
+	padding:6px 16px;
+}
+.ul-order{
+float:none;
+}
+.dropdown-content{
+	width:100%;
+}
+.dropdown-content a{
+	text-align:center;
+}
+.sp-1{
+	width:55%;
+	height:30%;
+	margin-bottom:5%;
+}
+.sp-1 h1{
+	font-size:6vw
+}
+.sp-1 h2{
+	font-size:4vw;
+}
+.sp-1 .order-btn{
+	font-size:3vw;
+}
+
+.footer h1{
+	font-size:5vw;
+}
+.left-footer{
+	width:45%;
+	margin-left:10%;
+}
+.right-footer{
+	width:45%;
+}
+.footer input[type=submit]{
+	padding:10px 30px;
+	font-size:2.5vw;
+}
+input[type=text], input[type=email], input[type=number], 
+input[type=date], input[type=range], input[type=time],
+input[type=tel]
+{
+	padding:1vw;
+	font-size:2.5vw;
+	margin-top:6%;
+}
+input[type=range]{
+	margin-top:10%;
+}
+ input[type=time]{
+	 margin-top:0;
+}
+}
+
+
+
+
+@media screen and (max-width:500px){
+li a{
+font-size:20px;
+}
+}
+
+
+
+</style>
+</head>
+<ul class="topnav">
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="#news">News</a></li>
+<li class="dropdown"><a href="#product">Product</a>
+<div class="dropdown-content">
+<a href="burger.html">Burger</a>
+<a href="pizza.html">Pizza</a>
+<a href="fries.html">Fries</a>
+<a href="sandwitch.html">Sandwich</a>
+<a href="morrito.html">Burrito</a>
+<a href="taco.html">Taco</a>
+<a href="noodels.html">Noodles</a>
+<a href="donuts.html">Donut</a>
+<a href="coffe.html">Cold-coffe</a>
+<a href="cake.html">Pancakes</a>
+</div>
+</li>
+<li><a href="Contactus.html">Contact Us</a></li>
+<li class="li-order"><a href="order.html">Order Now</a></li>
+</ul>
+
+<div class="home">
+<div class="home-content">
+<h1>PIZZA CASTLE</h1>
+<h3>Order your favourite food
+<br>
+from your pizza castle
+</h3>
+<a  href="order.html" class="order-btn">Order Now</a>
+</div>
+</div>
+
+
+<div class="container">
+<div class="cont-img">
+<img src="resto.jpg" width="100%"></div>
+<div class="cont-detail">
+<h1>WELCOME TO <span style="color:rgb(251,201,141);">PIZZA CASTLE</span>
+<br>RESTAURANT</h1>
+<p>
+Nestled in the heart of our bustling city, the pizza restaurant is a culinary gem that delights the senses and satiates cravings for the perfect slice of pizza. With its inviting aroma wafting through the air, this cozy eatery beckons patrons from all walks of life. The restaurant's warm and rustic ambiance, creates an inviting atmosphere for friends, families, and even solo diners.</p>
+</div>
+</div>
+
+
+<div class="special">
+<h1>Our Special Offers</h1>
+<div class="sp">
+<div class="sp-1">
+<img src="pizza.png" width="80%" alt="pizza">
+<h1>Pizza</h1>
+<h2>Rs. 230</h2>
+<button class="order-btn">Add To Cart</button>
+</div>
+
+<div class="sp-1">
+<img src="burger.png" width="77%" alt="burger">
+<h1>Burger</h1>
+<h2>Rs. 120</h2>
+<button class="order-btn">Add To Cart</button>
+</div>
+
+<div class="sp-1">
+<img src="fries1.png" width="77%" alt="fries">
+<h1>Fries</h1>
+<h2>Rs. 90</h2>
+<button class="order-btn">Add To Cart</button>
+</div>
+
+<div class="sp-1">
+<img src="coffe-1.png" width="77%" alt="coffe">
+<h1>Coffe</h1>
+<h2>Rs. 150</h2>
+<button class="order-btn">Add To Cart</button>
+</div>
+</div>
+</div>
+
+<div class="footer">
+<h1>Reservation</h1>
+<div class="footer-cont" style="margin:auto;">
+<div class="left-footer">
+<input type="text" name="name" placeholder="Your Name">
+<input type="email" name="email" placeholder="Your Email">
+<input type="date" placeholder="Date">
+</div>
+
+<div class="right-footer">
+<input type="tel" name="pnumber" placeholder="Phone Number">
+<input type="range" min="1" max="20" name="number" placeholder="Number Of People">
+<input type="time" placeholder="Time">
+</div>
+</div>
+<input type="submit" class="order-btn" value="Book a Table">
+</div>
